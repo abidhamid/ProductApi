@@ -19,7 +19,7 @@ namespace ProductApi.Controllers
 
             if (_context.ProductItems.Count() == 0)
             {
-                // Create a new TodoItem if collection is empty,
+                // Create a new TodoItem if collection is empty, always
                 // which means you can't delete all TodoItems.
                 _context.ProductItems.Add(new ProductItem { Name = "Nvidia 1080", Category = "Graphics card", Description = "New", Price = 300 });
                 _context.ProductItems.Add(new ProductItem { Name = "Nvidia 660", Category = "Graphics card", Description = "Old", Price = 110 });
